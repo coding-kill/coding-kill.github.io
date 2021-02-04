@@ -1,21 +1,16 @@
 ---
-layout: page
-title: "404: Page not found"
+layout: default
+title: 404
+hide-in-nav: true
+description: "你来到了没有知识的荒原 :("
+header-img: "img/404-bg.jpg"
 permalink: /404.html
-
-redirect_from:
-  - /norobots/
-  - /assets/
-  - /posts/
-
-dynamic_title: true
 ---
 
-<div class="lead">
-  <p>Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. </p>
-  <p>
-    <a href="{{ '/' | relative_url }}">Head back Home</a>
-    to try finding it again, or search for it on the
-    <a href="{{ 'archives' | relative_url }}">Archives page</a>.
-  </p>
-</div>
+
+<!-- Page Header -->
+{% include intro-header.html type="page" short='true' %}
+
+<script>
+	document.body.classList.add('page-fullscreen');
+</script>
